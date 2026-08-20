@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">JobBoard</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+
+        <h1>Find Your Dream Job</h1>
+
+        <p>
+            Search for jobs and find the right opportunity for your career.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Job title or keyword"
+            >
+
+            <input
+                type="text"
+                id="locationInput"
+                placeholder="Location"
+            >
+
+            <button onclick="searchJobs()">
+                Search
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <main id="jobs">
+
+        <h2>Available Jobs</h2>
+
+        <div id="jobList" class="job-list"></div>
+
+        <p id="noJobs" class="no-jobs">
+            No jobs found.
+        </p>
+
+    </main>
+
+
+    <section id="about" class="about">
+
+        <h2>About JobBoard</h2>
+
+        <p>
+            JobBoard is a simple job search platform that helps users
+            find job opportunities based on their skills and location.
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 JobBoard. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
